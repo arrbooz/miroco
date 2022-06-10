@@ -1,0 +1,122 @@
+.questions {
+    position: relative;
+    padding: 80px 0;
+    margin-bottom: 180px;
+    background-color: $blue;
+
+    &__inner {
+        position: relative;
+        z-index: 6;
+    }
+    &__title {
+        color: $white;
+        margin-bottom: 20px;
+    }
+    &__text {
+        line-height: 150%;
+        color: $white;
+        margin-bottom: 40px;
+    }
+    &__form-input {
+        max-width: 373px;
+        width: 100%;
+        border: 1px solid #F7FAFC;
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 16px 20px;
+        color: $white;
+        line-height: 100%;
+        margin-right: 15px;
+        &::placeholder {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            line-height: 100%;
+            color: $white;
+        }
+    }
+    &__form-btn {
+        max-width: 373px;
+        width: 100%;
+    }
+}
+
+// images
+
+.questions-circle-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.questions-circle-2 {
+    position: absolute;
+    top: 80px;
+    right: -230px;
+}
+
+// media
+
+@media (max-width: 1200px) {
+    .questions {
+        padding: 60px 0;
+        margin-bottom: 117px;
+    }
+    .questions__form-btn {
+        max-width: 299px;
+    }
+    .questions__form-input {
+        max-width: 299px;
+        margin-right: 12px;
+    }
+    .questions-circle-1 {
+        left: -184px;
+    }
+    .questions-circle-2 {
+        right: -424px;
+    }
+}
+
+@media (max-width: 960px) {
+    .questions__inner {
+        display: flex;
+    }
+    .questions__form {
+        align-self: flex-end;
+        padding-top: 60px;
+        max-width: 290px;
+    }
+    .questions__form-input {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .questions__inner {
+        flex-direction: column;
+    }
+    .questions__form {
+        padding-top: 0;
+        align-self: center;
+    }
+    .questions-circle-1 {
+        left: -277px;
+    }
+    .questions-circle-2 {
+        right: -569px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .questions-circle-1 {
+        left: -300px;
+    }
+    .questions-circle-2 {
+        width: 281px;
+        top: 93px;
+        right: -105px;
+    }
+}
+
+

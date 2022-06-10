@@ -1,0 +1,269 @@
+.buy {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 240px;
+
+    &__info {
+        max-width: 460px;  
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__text {
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+}
+
+// images
+
+.buy-bg {
+	position: absolute;
+	top: -21px;
+    right: -10px;
+}
+
+.buy-circle {
+    position: absolute;
+    right: -20px;
+    top: 124px;
+    transform: rotate(8deg);
+}
+.buy__img {
+    position: absolute; 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+}
+.buy__img-1 {
+    top: 121px;
+    right: -9px;
+    z-index: 5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.buy__img-2 {
+    top: 286px;
+    right: -13px;
+    z-index: 5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.buy__img-mobile {
+    display: none;
+}
+
+.buy-bg-mobile {
+    display: none;
+}
+
+// media
+
+@media (max-width: 1760px) {
+    .buy-bg {
+        right: -60px;
+    }
+    .buy__img-1 {
+        right: -60px;
+    }
+    .buy__img-2 {
+        right: -60px;
+    }
+    .buy-circle {
+        right: -57px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .buy-bg {
+        right: -160px;
+    }
+    .buy__img-1 {
+        right: -160px;
+    }
+    .buy__img-2 {
+        right: -160px;
+    }
+    .buy-circle {
+        right: -157px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .buy-bg {
+        right: -260px;
+    }
+    .buy__img-1 {
+        right: -260px;
+    }
+    .buy__img-2 {
+        right: -260px;
+    }
+    .buy-circle {
+        right: -257px;
+    } 
+}
+
+@media (max-width: 1200px) {
+    .buy {
+        padding-top: 35px;
+    }
+    .buy__info {
+        max-width: 440px;  
+    }
+    .buy__text {
+        margin-bottom: 20px;
+    }
+    .buy-bg {
+        right: -350px;
+        top: -78px;
+        height: 98%;
+    }
+    .buy__img-1 {
+        right: -392px;
+        top: 33px;
+    }
+    .buy__img-2 {
+        right: -420px;
+        top: 198px;
+    }
+    .buy-circle {
+        right: -374px;
+        top: -48px;
+    } 
+}
+
+@media (max-width: 960px) {
+    .buy {
+        padding-top: 35px;
+    }
+    .buy__info {
+        max-width: 340px;  
+    }
+    .buy__title {
+        margin-bottom: 15px;
+    }
+    .buy__text {
+        margin-bottom: 20px;
+    }
+    .buy .btn {
+        width: 100%;
+    }
+    .buy-bg {
+        right: -510px;
+        top: -78px;
+        height: 98%;
+    }
+    .buy__img-1 {
+        right: -560px;
+        top: 33px;
+    }
+    .buy__img-2 {
+        right: -536px;
+        top: 198px;
+    }
+    .buy-circle {
+        right: -374px;
+        top: -48px;
+    } 
+}
+
+@media (max-width: 850px) {
+    .buy-bg {
+        right: -577px;
+    }
+    .buy__img-1 {
+        right: -606px;
+    }
+    .buy__img-2 {
+        right: -609px;
+    }
+    .buy-circle {
+        right: -390px;
+        top: -42px;
+    } 
+}
+
+@media (max-width: 720px) {
+    .buy-bg {
+        right: -640px;
+    }
+    .buy__img-1 {
+        right: -650px;
+    }
+    .buy__img-2 {
+        right: -670px;
+    }
+    .buy-circle {
+        display: none;
+    } 
+}
+
+@media (max-width: 640px) {
+    .buy__info {
+        max-width: 300px;
+    }
+    .buy-bg {
+        right: -690px;
+    }
+    .buy-circle {
+        display: none;
+    }
+    .buy__img-1 {
+        right: -630px;
+    }
+    .buy__img-2 {
+        right: -742px;
+    }
+}
+
+@media (max-width: 550px) {
+    .buy-bg {
+        right: -750px;
+    }
+    .buy__img-1 {
+        right: -670px;
+    }
+    .buy__img-2 {
+        right: -770px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy {
+        padding-top: 0;
+    }
+    .buy__img {
+        display: none;
+    }
+    .buy__img-mobile {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        box-shadow: 0.310416px 1.24166px 2.48333px rgba(0, 0, 0, 0.25);
+        border-radius: 4.96665px;
+    }
+    .buy-bg {
+        display: none;
+    }
+    .buy-bg-mobile {
+        display: block;
+        position: absolute;
+        left: 26px;
+        bottom: 67px;
+    }
+    .buy__img-1-mobile {
+        left: 80px;
+        bottom: 133px;
+        width: 400px;
+        height: 46px;
+    }
+    .buy__img-2-mobile {
+        width: 422px;
+        height: 45px;
+        left: 61px;
+        bottom: 84px;
+    }
+}

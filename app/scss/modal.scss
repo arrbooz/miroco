@@ -1,0 +1,193 @@
+.modal {
+    z-index: 1000;
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+  
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background-color: $background;
+    padding: 50px 60px;
+    max-width: 540px;
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 12px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__title {
+    margin: 0 auto 30px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 32px;
+    color: $black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal__close {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: $black;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.modal__header .modal__close:before { content: "\2715"; }
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__form-input {
+    width: 100%;
+    background-color: $white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px 15px 54px;
+    margin-bottom: 15px;
+    
+    &::placeholder {
+        color: #4F576D;
+        font-size: 16px;
+    }
+    &:focus {
+        outline: 1px solid $black;
+    }
+}
+
+.modal__input-box {
+    position: relative;
+}
+
+.modal__form-input-img {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    width: 24px;
+    height: 24px;
+}
+  
+.modal__form-btn {
+    padding: 18px 32px;
+    background-color: $blue;
+    border: none;
+    border-radius: 8px;
+    color: $white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    &:hover {
+        background-color: #0014C6;
+    }
+}
+
+.modal-link {
+    transition: all ease 0.3;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.modal__policy {
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    margin-bottom: 15px;
+    a {
+        color: $blue;
+        text-decoration: underline;
+    }
+}
+
+.modal__import,
+.modal__forgetpass {
+    display: block;
+    font-size: 16px;
+    line-height: 125%;
+    color: $blue;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.modal__already-reg {
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    a {
+        color: $blue;
+        text-decoration: underline;
+    }
+}
+  
+//   Modal animation
+
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+  
+@keyframes mmslideIn {
+from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+display: none;
+}
+
+.micromodal-slide.is-open {
+display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+will-change: transform;
+}

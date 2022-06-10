@@ -1,0 +1,198 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 110px;
+  background: transparent;
+  padding: 30px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.navbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 82%;
+}
+
+.nav {
+  
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__list-item {
+    margin-right: 30px;
+  }
+  &__list-link {
+    line-height: 100%;
+    color: $white;
+    transition: all ease 0.3;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.auth {
+  margin: 0 0 0 auto;
+  line-height: 100%;
+
+  .log-in {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all ease-in-out .3;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.nav-btn {
+  display: none;
+}
+
+// media
+
+@media (max-width: 960px) {
+  .navbox {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    align-items: center;
+  }
+  .burger__field {
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+  }
+  .bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: $white;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+  .popup {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    z-index: 1;
+    display: flex;
+    transition: 0.3s;
+  }
+  .popup.open {
+    top: 0;
+    z-index: 9;
+    nav {
+      padding-top: 40px;
+    }
+  }
+  .popup .navbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: flex-start;
+    padding: 50px 0;
+  }
+  .popup .nav__list {
+    flex-direction: column;
+  }
+  .popup .nav__list-item {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(#f7fafc, 0.2);
+      height: 1px;
+      width: 620px;
+      bottom: 0;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // auth
+
+  .popup {
+    .auth {
+      margin: 0 auto;
+      width: 270px;
+    }
+    .auth button {
+      display: block;
+    }
+    .reg {
+      width: 100%;
+    }
+    .log-in {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .nav-btn {
+      display: block;
+      margin-left: auto;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      span {
+        background-color: $white;
+        width: 18px;
+        height: 3px;
+        border-radius: 2px;
+        display: block;
+      }
+      span:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  body.noscroll {
+    overflow: hidden;
+  }
+}

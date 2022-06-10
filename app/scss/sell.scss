@@ -1,0 +1,286 @@
+.sell {
+    padding-top: 330px;
+    padding-bottom: 435px;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__info {
+        max-width: 460px;  
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__text {
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+}
+
+// images
+
+.sell-bg,
+.sell-circle {
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+
+.sell__img {
+    position: absolute; 
+    border-radius: 8px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+ 
+.sell__img-1 {
+    top: 268px;
+    left: 360px;
+    z-index: 6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sell__img-2 {
+    top: 229px;
+    left: 580px;
+    z-index: 5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sell-bg-mobile {
+    display: none;
+}
+
+// media 
+
+@media (max-width: 1760px) {
+    .sell-bg {
+        left: -60px;
+    }
+    .sell__img-1 {
+        left: 300px;
+    }
+    
+    .sell__img-2 {
+        left: 520px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .sell-bg {
+        left: -160px;
+    }
+    .sell__img-1 {
+        left: 200px;
+    }
+    
+    .sell__img-2 {
+        left: 420px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .sell-bg {
+        left: -260px;
+    }
+    .sell-circle {
+        left: -100px;
+    }
+    .sell__img-1 {
+        left: 100px;
+    }
+    .sell__img-2 {
+        left: 320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sell {
+        padding-top: 292px;
+    }
+    .sell__info {
+        max-width: 440px;  
+    }
+    .sell__title {
+        margin-bottom: 20px;
+    }
+    .sell__text {
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+    .sell-bg {
+        top: 0px;
+        left: -364px;
+    }
+    .sell-circle {
+        left: -280px;
+        top: 40px;
+    }
+    .sell__img-1 {
+        width: 269px;
+        height: 376px;
+        left: 67px;
+        top: 250px;
+    }
+    .sell__img-2 {
+        width: 269px;
+        height: 446px;
+        left: 281px;
+        top: 215px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .sell-bg {
+        top: 0px;
+        left: -445px;
+    }
+    .sell__img-2 {
+        left: 190px;
+    }
+    .sell__img-1 {
+        left: 32px;
+    }
+}
+
+@media (max-width: 960px) {
+    .sell {
+        padding-top: 292px;
+        padding-bottom: 240px;
+    }
+    .sell__info {
+        max-width: 340px;  
+        br {
+            display: none;
+        }
+    }
+    .sell__title {
+        margin-bottom: 15px;
+    }
+    .sell__text {
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+    .sell .btn {
+        width: 100%;
+    }
+    .sell-bg {
+        top: 61px;
+        left: -468px;
+        height: 100%;
+    }
+    .sell-circle {
+        left: -396px;
+        top: 26px;
+    }
+    .sell__img-1 {
+        width: 199px;
+        height: 280px;   
+        left: 62px;
+        top: 358px;
+    }
+    .sell__img-2 {
+        width: 199px;
+        height: 334px;
+        left: 154px;
+        top: 241px;
+    }
+}
+
+@media (max-width: 880px) {
+    .sell-bg {
+        left: -518px;
+    }
+    .sell__img-2 {
+        left: 119px;
+    }
+    .sell__img-1 {
+        left: 37px;
+    }
+}
+
+@media (max-width: 770px) {
+    .sell-bg {
+        left: -580px;
+    }
+    .sell-circle {
+        left: -427px;
+    }
+    .sell__img-2 {
+        left: 62px;
+    }
+    .sell__img-1 {
+        left: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .sell__info {
+        max-width: 300px;
+    }
+    .sell-bg {
+        left: -660px;
+    }
+    .sell__img-2 {
+        left: -19px;
+    }
+    .sell__img-1 {
+        left: -55px;
+    }
+}
+
+@media (max-width: 570px) {
+    .sell-bg {
+        left: -700px;
+    }
+    .sell-circle {
+        display: none;
+    }
+    .sell__img-2 {
+        left: -60px;
+    }
+    .sell__img-1 {
+        left: -100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sell {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+    .sell-circle {
+        display: none;
+    }
+    .sell-bg {
+        display: none;
+    }
+    .sell-bg-mobile {
+        display: block;
+    }
+    .sell__img-2 {
+        top: 517px;
+        left: 172px;
+    }
+    .sell__img-1 {
+        top: 650px;
+        left: 80px;
+    }
+}
+
+@media (max-width: 410px) {  
+    .sell__img-2 {
+        left: 124px;
+        top: 547px;
+    }
+    .sell__img-1 {
+        left: 60px;
+        top: 690px;
+    }
+}

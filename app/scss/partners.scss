@@ -1,0 +1,124 @@
+.partners {
+    padding-top: 170px;
+    padding-bottom: 75px;
+}
+
+// swiper 
+
+.partners-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0 70px;
+}
+
+.swiper-slide__img {
+    height: 97px;
+    img {
+        height: 100%;
+        object-fit: contain;
+        max-width: 218px;
+        width: 100%;
+        display: block;
+    } 
+}
+
+.partners .swiper-wrapper {
+    margin-bottom: 30px;
+}
+
+// navigation
+
+.partners-prev,
+.partners-next {
+    position: absolute;
+    cursor: pointer;
+    max-height: 97px;
+    img {
+        width: 12px;
+        height: 24px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.partners-prev {
+    padding-right: 50px;
+    top: 28px;
+    left: 0;
+}
+
+.partners-next {
+    padding-left: 50px;
+    top: 28px;
+    right: 0;
+}
+
+// pagination 
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    text-align: center;
+}
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+.swiper-pagination-bullet-active {
+    background-color: $blue;
+}
+
+// media
+
+@media (max-width: 1200px) {
+    .partners {
+        padding-top: 120px;
+    }
+    .partners-slider {
+        padding: 0 55px;
+    }
+    .partners .swiper-slide__img img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .partners-next,
+    .partners-prev {
+        position: static;
+    }
+    .partners-prev {
+        padding-right: 30px;
+    }
+    .partners-next {
+        padding-left: 30px;
+    }
+
+    .partners .swiper-slide__img img {
+        max-width: 300px;
+    }
+
+    .partners .partners__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+    .partners .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners .section-title--line {
+        &::before {
+            height: 68px;
+        }
+    }
+    .partners {
+        padding-top: 85px;
+    }
+    .partners-slider {
+        padding: 0;
+    }
+}

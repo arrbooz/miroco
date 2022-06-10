@@ -1,0 +1,265 @@
+.rates {
+    padding-top: 90px;
+    padding-bottom: 75px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__slider {
+        overflow: hidden;
+    }
+    &__navigation {
+        display: none;
+    }
+}
+
+.rates__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 38px 46px;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 8px;
+
+    &-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &-points {
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 15px;
+    }
+    &-point {
+        max-width: 296px;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../img/rates-check.svg);
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 0;
+        }  
+    }
+    &-point--withoutcheck {
+        text-align: center;
+        padding-left: 0;
+        &::before {
+            content: none; 
+        }
+    }
+    &-bottom {
+        width: 100%;
+    }
+    &-price {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 30px;
+        text-align: center;  
+    }
+    &-btn {
+        max-width: 296px;
+        width: 100%;
+        border: 1px solid #4B5DFF;
+        background-color: transparent;
+        line-height: 100%;
+        text-align: center;
+        color: $black;
+        transition: all ease .3;
+        &:hover {
+            background-color: #2A3FFF;
+            color: $white; 
+        }
+    }
+}
+
+.rates__item--active {
+    background-color: $blue;
+    color: $white;
+    .rates__item-point {
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../img/rates-check-white.svg);
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 0;
+        }  
+    }
+    .rates__item-point--withoutcheck {
+        text-align: center;
+        padding-left: 0;
+        &::before {
+            content: none; 
+        }
+    }
+    .rates__item-btn {
+        background-color: $white;
+        &:hover {
+            background-color: #2A3FFF;
+        }
+    }
+}
+
+.rates__slider-2 {
+    display: none;
+}
+
+// switch
+
+.switch__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 102px;
+}
+
+.switch__btn {
+    margin: auto 20px;
+    input[type="checkbox"] {
+        position: relative;
+        width: 50px;
+        height: 30px;
+        -webkit-appearance: none;
+        outline: none;
+        background: $blue;
+        border-radius: 15px;
+        transition: .5s;
+
+    }
+    input:checked[type="checkbox"] {
+        background: $blue;
+    }
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        top: 0; 
+        left: 0;
+        background: #fff;
+        transition: .5s;
+        transform: scale(0.9);
+    }
+    input:checked[type="checkbox"]::before {
+        left: 20px;
+    }  
+    input:checked[type="checkbox"] {
+        .rates__slider-2 {
+            display: block;
+        }
+    }  
+}
+
+// media
+
+@media (max-width: 1200px) {
+    .rates {
+        padding-top: 35px;
+    }
+    .switch__wrapper {
+        margin-bottom: 60px;
+    }
+    .rates__item {
+        padding: 30px;
+    }
+    .rates__item-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 960px) {
+    .rates {
+        padding-bottom: 50px;
+    }    
+    .rates__item {
+        padding-top: 60px;
+        max-height: 270px;
+    }
+    .rates__item-title {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 24px;
+    }
+    .rates__item-price {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 24px;
+    }
+    .rates__item-points {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        margin-bottom: 0;
+        
+    }
+    .rates__item-point {
+        max-width: 275px;
+        font-size: 14px;
+    }
+    .rates-point--withoutcheck {
+        text-align: left;
+    }
+    .rates__item-btn {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 640px) {
+    .rates__item {
+        max-height: none;
+        margin-bottom: 50px;
+    }
+    .rates__navigation {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .rates__navigation__prev,
+    .rates__navigation__next {
+        cursor: pointer;
+    }
+    .rates .swiper-pagination-bullets.swiper-pagination-horizontal {
+        text-align: center;
+    }
+    .rates .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    .rates .swiper-pagination-bullet-active {
+        background-color: $blue;
+    }
+    .rates__item-btn {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .rates__item {
+        margin-bottom: 30px;
+    }
+    .rates__item-title,
+    .rates__item-price {
+        position: static;
+    }
+    .rates__item-point {
+        font-size: 16px;
+    }
+}
