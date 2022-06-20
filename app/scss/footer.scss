@@ -44,18 +44,23 @@
         border-top: 1px solid rgb(220, 221, 225);
         padding-top: 20px;
     }
-    &__bottom-link {
+    &__bottom-link,
+    &-copyright {
         font-size: 14px;
         color: $grey;
         transition: all ease .2;
-        &:first-child {
-            margin-right: 60px;
-        }
+        margin-right: 60px;
         &:hover {
             opacity: .7;
         }
     }
+    &-copyright {
+        font-size: 16px;
+    }
+    
     &__bottom-link--black {
+        font-size: 14px;
+        color: $grey;
         b {
             color: #000000;
             font-weight: 700;
@@ -64,42 +69,70 @@
             color: red;
         }
     }
+    &__bottom-left {
+        display: flex;
+        align-items: center;
+    }
+    &__bottom-right {
+        display: flex;
+        align-items: center;
+    }
     &__bottom-icon {
         width: 115px;
         height: 27px;
+        margin: 0;
+        margin-right: 0;
+        display: inline-block;
+        align-self: flex-end;
+        img {
+            width: 100%;
+
+        }
     }
+    &__logo {
+        width: 132px;
+        height: 31px;
+    }
+
 }
 
 // media 
 
 @media (max-width: 1200px) {
-    .footer__bottom {
-        flex-wrap: wrap;
-    }
     .footer__bottom-icon {
-        order: 2;   
-        margin-left: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
-    .footer__bottom-link {
-        margin-right: 60px;
-    }
-    .footer__bottom-link--black {
-        margin-right: 0;
+    .footer__bottom {
+        position: relative;
+        padding-bottom: 35px;
     }
 }
 
 @media (max-width: 960px) {
+    .footer {
+        padding-top: 24px;
+    }
     .footer__top {
         flex-wrap: wrap; 
+        margin-bottom: 33px;
     }
     .footer__nav {
         order: 1;
     }
     .footer__logo {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
     .footer__bottom-right {
-        text-align: right;
+        align-items: flex-end;
+    }
+    .footer__bottom-left {
+        align-items: flex-start;
+    }
+    .footer-copyright {
+        margin-right: 0;
+        order: 1;
     }
     .footer__bottom-right,
     .footer__bottom-left {
@@ -110,11 +143,20 @@
     .footer__bottom-link:first-child {
         margin-right: 0;
     }
+    .footer__social {
+        align-self: flex-start;
+    }
 }
 
 @media (max-width: 640px) {
     .footer__bottom-left a {
         margin-right: 0;
+    }
+    .footer {
+        padding-top: 17px;
+    }
+    .footer-copyright {
+        order: 1;
     }
 }
 
@@ -124,11 +166,11 @@
     }
     .footer__nav-list {
         flex-wrap: wrap;
-        
     }
     .footer__nav-item {
         width: 50%;
-        margin: 0 !important;
+        margin: 0 0 10px 0 !important;
+        
     }
     .footer__nav-item:nth-child(even) {
         text-align: right;
@@ -136,7 +178,6 @@
     .footer__top {
         margin-bottom: 15px;
     }
-    
     .footer__bottom {
         flex-direction: column;
         align-items: center;
@@ -147,12 +188,16 @@
     .footer__bottom-link,
     .footer__bottom-icon,
     .footer__bottom-left,
-    .footer__bottom-right {
+    .footer__bottom-right,
+    .footer-copyright {
         margin: 0 auto;
     }
     .footer__bottom-link:first-child {
         margin-right: 0;
         margin: 0 auto;
+    }
+    .footer-copyright:first-child {
+        margin-right: 0;
     }
     .footer__bottom-right {
         align-items: center;
@@ -161,8 +206,10 @@
     .footer__bottom-left {
         margin: 0 0 30px 0 !important;
         width: 100%;
+        font-size: 14px;
     }
-    .footer__bottom-link {
+    .footer__bottom-link,
+    .footer-copyright {
         font-size: 16px;
         text-align: center;
     }
@@ -173,11 +220,14 @@
     }
     .footer__bottom-icon {
         position: absolute;
-        bottom: 52px;
+        top: 63%;
+        left: 50%;
+        margin: 0;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
     }
     .footer__social {
         order: 1;
         margin-left: auto;
-        margin-top: 15px;
     }
 }

@@ -51,7 +51,11 @@
 
 @media (max-width: 960px) {
     .connect {
-        padding: 40px 0;
+        padding: 35px 0;
+    }
+    .connect__text {
+        max-width: 570px;
+        margin-bottom: 20px;
     }
     .connect-circle-1 {
         left: -487px;
@@ -64,6 +68,12 @@
     }
     .connect-circle-2 {
         right: -364px;
+    }
+    .connect__text {
+        margin-bottom: 12px;
+    }
+    .connect .btn {
+        padding: 14px 27px;
     }
 }
 
@@ -81,5 +91,8 @@
     .connect-circle-2 {
         right: -282px;
         transform: rotate(45deg);
+    }
+    .connect .btn {
+        padding: 14px 26px;
     }
 }

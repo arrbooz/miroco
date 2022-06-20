@@ -151,7 +151,7 @@
 
 @media (max-width: 960px) {
     .sell {
-        padding-top: 292px;
+        padding-top: 288px;
         padding-bottom: 240px;
     }
     .sell__info {
@@ -172,7 +172,7 @@
     }
     .sell-bg {
         top: 61px;
-        left: -468px;
+        left: -440px;
         height: 100%;
     }
     .sell-circle {
@@ -182,14 +182,26 @@
     .sell__img-1 {
         width: 199px;
         height: 280px;   
-        left: 62px;
-        top: 358px;
+        left: 74px;
+        top: 371px;
     }
     .sell__img-2 {
         width: 199px;
         height: 334px;
-        left: 154px;
-        top: 241px;
+        left: 168px;
+        top: 248px;
+    }
+}
+
+@media (max-width: 920px) {
+    .sell-bg {
+        left: -490px;
+    }
+    .sell__img-2 {
+        left: 119px;
+    }
+    .sell__img-1 {
+        left: 37px;
     }
 }
 
@@ -221,23 +233,48 @@
 }
 
 @media (max-width: 640px) {
+    .sell {
+        padding-bottom: 152px;
+    }
     .sell__info {
         max-width: 300px;
     }
+    .sell__text {
+        padding-right: 0;
+    }
     .sell-bg {
-        left: -660px;
+        left: -593px;
+        top: 99px;
+    }
+    .sell-circle {
+        display: none;
     }
     .sell__img-2 {
-        left: -19px;
+        left: 7px;
     }
     .sell__img-1 {
-        left: -55px;
+        left: -87px;
+        top: 366px;
+    }
+}
+
+@media (max-width: 620px) {
+    .sell-bg {
+        left: -620px;
+        top: 99px;
+    }
+    .sell__img-2 {
+        left: -20px;
+    }
+    .sell__img-1 {
+        left: -108px;
+        top: 366px;
     }
 }
 
 @media (max-width: 570px) {
     .sell-bg {
-        left: -700px;
+        left: -665px;
     }
     .sell-circle {
         display: none;
@@ -252,7 +289,7 @@
 
 @media (max-width: 480px) {
     .sell {
-        padding-top: 120px;
+        padding-top: 85px;
         padding-bottom: 0;
     }
     .sell-circle {
@@ -265,22 +302,22 @@
         display: block;
     }
     .sell__img-2 {
-        top: 517px;
-        left: 172px;
+        top: 492px;
+        left: 180px;
     }
     .sell__img-1 {
-        top: 650px;
-        left: 80px;
+        top: 623px;
+        left: 88px;
     }
 }
 
 @media (max-width: 410px) {  
     .sell__img-2 {
         left: 124px;
-        top: 547px;
+        top: 499px;
     }
     .sell__img-1 {
         left: 60px;
-        top: 690px;
+        top: 651px;
     }
 }

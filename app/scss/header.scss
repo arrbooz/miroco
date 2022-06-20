@@ -71,9 +71,14 @@
   display: none;
 }
 
+.close {
+  opacity: 0;
+}
+
 // media
 
 @media (max-width: 960px) {
+
   .navbox {
     display: none;
   }
@@ -109,9 +114,6 @@
   .popup.open {
     top: 0;
     z-index: 9;
-    nav {
-      padding-top: 40px;
-    }
   }
   .popup .navbox {
     display: flex;
@@ -122,6 +124,7 @@
     overflow: auto;
     justify-content: flex-start;
     padding: 50px 0;
+    overflow-x: hidden;
   }
   .popup .nav__list {
     flex-direction: column;

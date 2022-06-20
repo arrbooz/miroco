@@ -70,16 +70,28 @@
         text-align: center;
         padding: 0;  
     }
+    .advantages__subtitle {
+        font-size: 16px;
+    }
     .advantages__item:not(:last-child) {
         margin-bottom: 30px;
     }
     .advantages__item:nth-child(3) {
         justify-self: center;
-        margin: 0 auto;
-        
+        margin: 0 auto; 
     }
     .advantages__subtitle {
         margin-bottom: 10px;
+    }
+    .advantages__img {
+        width: 50px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 640px) {
+    .advantages {
+        padding-bottom: 15px;
     }
 }
 
@@ -95,8 +107,8 @@
     .advantages__item {
         max-width: none;
     }
-    .advantages__img {
-        width: 50px;
-        height: 48px;
+    .advantages__subtitle {
+        font-weight: 700;
     }
+
 }

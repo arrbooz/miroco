@@ -116,6 +116,10 @@
     display: none;
 }
 
+.rates .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: auto;
+}
+
 // switch
 
 .switch__wrapper {
@@ -167,6 +171,7 @@
 @media (max-width: 1200px) {
     .rates {
         padding-top: 35px;
+        padding-bottom: 65px;
     }
     .switch__wrapper {
         margin-bottom: 60px;
@@ -181,22 +186,30 @@
 
 @media (max-width: 960px) {
     .rates {
-        padding-bottom: 50px;
+        padding-bottom: 28px;
     }    
+    .rates__title {
+        margin-bottom: 15px;
+    }
+    .switch__wrapper {
+        margin-bottom: 35px;
+    }
     .rates__item {
-        padding-top: 60px;
-        max-height: 270px;
+        padding-top: 75px;
+        // нужно исправить 
+        max-height: 245px; 
+        justify-content: flex-start;
     }
     .rates__item-title {
         position: absolute;
-        left: 20px;
-        top: 15px;
+        left: 27px;
+        top: 27px;
         font-size: 24px;
     }
     .rates__item-price {
         position: absolute;
-        right: 20px;
-        top: 15px;
+        right: 31px;
+        top: 30px;
         font-size: 24px;
     }
     .rates__item-points {
@@ -209,25 +222,28 @@
     .rates__item-point {
         max-width: 275px;
         font-size: 14px;
+        margin-bottom: 0;
     }
     .rates-point--withoutcheck {
         text-align: left;
     }
     .rates__item-btn {
         align-self: flex-end;
+        max-width: 260px;
     }
 }
 
 @media (max-width: 640px) {
+    .rates {
+        padding-bottom: 39px;
+    }
     .rates__item {
         max-height: none;
         margin-bottom: 50px;
     }
     .rates__navigation {
-        width: 100%;
-        max-width: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
     }
@@ -237,6 +253,19 @@
     }
     .rates .swiper-pagination-bullets.swiper-pagination-horizontal {
         text-align: center;
+    }
+    .rates__pagination {
+        margin-top: 5px;
+        padding-bottom: 3px;
+    }
+    .rates__prev,
+    .rates__next {
+        width: 30px;
+        height: 30px;
+    }
+    .rates .rates__pagination {
+        padding: 0 20px;
+        margin-top: 0;
     }
     .rates .swiper-pagination-bullet {
         width: 12px;
@@ -249,17 +278,36 @@
         width: 100%;
         max-width: none;
     }
+    .rates__item-points {
+        margin-bottom: 40px;
+    }
+    .rates__item-price {
+        right: 18px;
+    }
 }
 
 @media (max-width: 480px) {
     .rates__item {
         margin-bottom: 30px;
+        padding-top: 30px;
     }
     .rates__item-title,
     .rates__item-price {
         position: static;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .rates__item-points {
+        margin-bottom: 20px;
     }
     .rates__item-point {
         font-size: 16px;
+    }
+    .rates .rates__navigation {
+        width: 100%;
+        max-width: none;
+    }
+    .rates__pagination {
+        margin: auto;
     }
 }

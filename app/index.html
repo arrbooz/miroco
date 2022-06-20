@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miroco</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicon/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
 </head>
 <body>
 
@@ -15,9 +21,10 @@
     <div class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="" class="logo logo--close" id="logo">
+                <picture id="logo">
+                    <source srcset="img/logo.png 1x, img/logo@2x.png 2x">
                     <img src="img/logo.png" alt="logo">
-                </a>
+                </picture>
                 <div class="navbox" id="navbox">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -71,19 +78,7 @@
                                 <h5 class="intro__subtitle">Умная закупка – строительство</h5>
                                 <h1 class="intro__title">Нужно купить или продать материалы?</h1>
                                 <p class="intro__descr">Присоединяйтесь к современному сервису для автоматизации и эффективной работы с поставщиками по всей территории РФ, которым пользуются уже более 50 000 пользователей</p>
-                                <button class="intro__btn btn btn--white">Присоединиться</button> 
-                            </div>
-                            <div class="intro__img">
-                                <img src="img/content/intro-img.svg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__box">
-                                <h5 class="intro__subtitle">Умная закупка – строительство</h5>
-                                <h1 class="intro__title">Нужно купить или продать материалы?</h1>
-                                <p class="intro__descr">Присоединяйтесь к современному сервису для автоматизации и эффективной работы с поставщиками по всей территории РФ, которым пользуются уже более 50 000 пользователей</p>
-                                <button class="btn btn--white">Присоединиться</button> 
+                                <button class="intro__btn btn btn--white" data-micromodal-trigger="modal-1">Присоединиться</button> 
                             </div>
                             <div class="intro__img">
                                 <img src="img/content/intro-img.png" alt="image">
@@ -95,7 +90,7 @@
                                 <h5 class="intro__subtitle">Умная закупка – строительство</h5>
                                 <h1 class="intro__title">Нужно купить или продать материалы?</h1>
                                 <p class="intro__descr">Присоединяйтесь к современному сервису для автоматизации и эффективной работы с поставщиками по всей территории РФ, которым пользуются уже более 50 000 пользователей</p>
-                                <button class="btn btn--white">Присоединиться</button> 
+                                <button class="btn btn--white" data-micromodal-trigger="modal-1">Присоединиться</button> 
                             </div>
                             <div class="intro__img">
                                 <img src="img/content/intro-img.png" alt="image">
@@ -107,7 +102,19 @@
                                 <h5 class="intro__subtitle">Умная закупка – строительство</h5>
                                 <h1 class="intro__title">Нужно купить или продать материалы?</h1>
                                 <p class="intro__descr">Присоединяйтесь к современному сервису для автоматизации и эффективной работы с поставщиками по всей территории РФ, которым пользуются уже более 50 000 пользователей</p>
-                                <button class="btn btn--white">Присоединиться</button> 
+                                <button class="btn btn--white" data-micromodal-trigger="modal-1">Присоединиться</button> 
+                            </div>
+                            <div class="intro__img">
+                                <img src="img/content/intro-img.png" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__box">
+                                <h5 class="intro__subtitle">Умная закупка – строительство</h5>
+                                <h1 class="intro__title">Нужно купить или продать материалы?</h1>
+                                <p class="intro__descr">Присоединяйтесь к современному сервису для автоматизации и эффективной работы с поставщиками по всей территории РФ, которым пользуются уже более 50 000 пользователей</p>
+                                <button class="btn btn--white" data-micromodal-trigger="modal-1">Присоединиться</button> 
                             </div>
                             <div class="intro__img">
                                 <img src="img/content/intro-img.png" alt="image">
@@ -177,10 +184,14 @@
                 </div> <!--about info-->
 
                 <div class="about__img about__img-1">
-                    <img src="img/content/about-image-1.svg" alt="iphone">
+                    <img src="img/content/iphone.png" alt="iphone">
                 </div>
                 <div class="about__img about__img-2">
-                    <img src="img/content/about-image-2.svg" alt="macbook">
+                    <picture>
+                        <source srcset="img/content/macbook-960.png" media="(max-width: 960px)">
+                        <source srcset="img/content/macbook-1920.png">
+                        <img src="img/content/macbook-1920.png" alt="macbook">
+                    </picture> 
                 </div>
                 
             </div> <!--about inner-->
@@ -194,7 +205,7 @@
                 <div class="sell__info">
                     <h2 class="section-title sell__title">Продавайте</h2>
                     <p class="sell__text">Зарегестрируйтесь на платформе “МИРОко” и <br> станьте продавцом всего за несколько минут! Ежедневно на нашей платформе происходит более <br> <b>1 000</b> торгов. Получайте автоматические уведомления о запросе на продаваемый вами товар и оформляйте сделки в несколько кликов.</p>
-                    <button class="btn">Начать продавать</button>
+                    <button class="btn" data-micromodal-trigger="modal-1">Начать продавать</button>
                 </div>
 
             </div> <!--sell inner-->
@@ -243,7 +254,7 @@
                 <div class="buy__info">
                     <h2 class="section-title buy__title">Покупайте</h2>
                     <p class="buy__text">Сразу после регистрации на платформе “МИРОко” вы сможете пользоваться аукционом для покупки необхоимых вам материалов. Вы с легкостью сможете найти партнеров среди, более чем, <br> <b>50 000</b> поставщиков. Покупайте материалы по выгодным ценам от проверенных поставщиков и экономьте свое время и средства.</p>
-                    <button class="btn">Начать покупать</button>
+                    <button class="btn" data-micromodal-trigger="modal-1">Начать покупать</button>
                 </div>
                 
             </div> <!--buy inner-->
@@ -298,7 +309,7 @@
                 <div class="choose__info">
                     <h2 class="section-title choose__title">Выбирайте самые выгодные условия</h2>
                     <p class="choose__text">Продавайте или покупайте матриалы на выгодных для вас условиях. Благодаря удобному интерфейсу, в котором указана не только стоимость, но и сроки поставки товара, вы с легкостью сможете найти подходящий для вас вариант и запросить счет за считанные минуты!</p>
-                    <button class="btn">Зарегестрироваться</button>
+                    <button class="btn" data-micromodal-trigger="modal-1">Зарегестрироваться</button>
                 </div>
                 
             </div> <!--choose inner-->
@@ -526,7 +537,7 @@
         <div class="container">
             <div class="parnters__inner">
 
-                <h2 class="section-title section-title--line">Поставщики – партнеры</h2>
+                <h2 class="section-title section-title--line partners__title">Поставщики – партнеры</h2>
 
                     <div class="partners-slider">
 
@@ -712,7 +723,7 @@
         <div class="container">
             <div class="reviews__inner">
 
-                <h2 class="section-title section-title--line">Отзывы</h2>
+                <h2 class="section-title section-title--line reviews__title">Отзывы</h2>
 
                 <div class="reviews__wrapper">
                     <div class="reviews__slider">
@@ -851,8 +862,8 @@
                     <div class="questions__text">Заполните форму и наш консультант свяжется с вами в течение 15 минут</div>
                 </div>
                 <form class="questions__form">
-                    <input type="text" class="questions__form-input" name="name" required placeholder="Ваше имя">
-                    <input type="tel" class="questions__form-input" name="tel" required placeholder="Телефон">
+                    <input type="text" class="questions__form-input"  name="name" required placeholder="Ваше имя">
+                    <input data-inputmask="'mask': '+7(999)999-99-99'" type="tel" class="questions__form-input inputtel" name="tel" required placeholder="Телефон">
                     <button class="questions__form-btn btn btn--white">Отправить</button>
                 </form>
 
@@ -880,23 +891,23 @@
         <div class="container">
             <div class="footer__top">
                 <a class="footer__logo" href="#">
-                    <img src="img/footer-logo.svg" alt="logo">
+                    <img src="img/footer-logo.png" alt="logo">
                 </a>  
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">О платформе</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Преимущества</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Тарифы</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link nav__list-link--about" href="#">О платформе</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link nav__list-link--advantages" href="#">Преимущества</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link nav__list-link--rates" href="#">Тарифы</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link nav__list-link--reviews" href="#">Отзывы</a></li>
                     </ul>
                 </nav>
                 <div class="footer__social">
-                    <a class="footer__social-item" href="#">
+                    <a class="footer__social-item" href="#" target="_blank">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.36183 10.6399L6.10587 12.4088L7.95522 18.3589C8.03562 18.761 8.51807 18.8414 8.8397 18.6002L11.4931 16.4292C11.7343 16.1879 12.1364 16.1879 12.458 16.4292L17.202 19.8867C17.5237 20.1279 18.0061 19.9671 18.0865 19.565L21.6244 2.67956C21.7048 2.27752 21.3028 1.87549 20.9008 2.03631L1.36183 9.59457C0.879389 9.75538 0.879389 10.479 1.36183 10.6399ZM7.71401 11.5243L17.0412 5.81544C17.202 5.73503 17.3628 5.97625 17.202 6.05666L9.56336 13.2129C9.32214 13.4541 9.08091 13.7757 9.08091 14.1778L8.8397 16.1075C8.8397 16.3488 8.43766 16.4292 8.35725 16.1075L7.39236 12.5696C7.15114 12.1676 7.31197 11.6851 7.71401 11.5243Z" fill="#23262F"/>
                         </svg>
                     </a>
-                    <a class="footer__social-item" href="#">
+                    <a class="footer__social-item" href="#" target="_blank">
                         <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28.2996 17.3562C28.2996 17.2466 28.19 17.2466 28.19 17.137C27.7514 16.2603 26.7647 15.1644 25.449 13.9589C24.7912 13.411 24.4623 12.9726 24.243 12.7534C23.9141 12.3151 23.9141 11.9863 24.0238 11.548C24.1334 11.2192 24.5719 10.6712 25.3394 9.68493C25.7779 9.13698 25.9972 8.80822 26.3261 8.47946C27.9707 6.28767 28.7381 4.863 28.5189 4.20547L28.4092 4.09589C28.2996 3.9863 28.1899 3.87672 27.9707 3.87672C27.7514 3.76713 27.4225 3.76713 27.0936 3.87672H22.9274C22.8178 3.87672 22.8177 3.87672 22.5985 3.87672C22.4888 3.87672 22.3792 3.87672 22.3792 3.87672H22.2696H22.1599L22.0503 3.9863C21.9406 4.09588 21.9406 4.09588 21.9406 4.20547C21.5021 5.41095 20.9539 6.39725 20.4057 7.49314C20.0768 8.04109 19.7479 8.58904 19.419 9.0274C19.0901 9.46576 18.8708 9.79452 18.6515 10.0137C18.4323 10.2329 18.213 10.3425 18.1033 10.5616C17.9937 10.6712 17.7745 10.7808 17.7745 10.6712C17.6648 10.6712 17.5552 10.6712 17.5552 10.5616C17.4455 10.4521 17.3359 10.3425 17.2263 10.2329C17.1166 10.1233 17.1166 9.9041 17.007 9.68493C17.007 9.46575 17.007 9.24657 17.007 9.13698C17.007 9.02739 17.007 8.69863 17.007 8.47946C17.007 8.15069 17.007 7.9315 17.007 7.82191C17.007 7.49315 17.007 7.0548 17.007 6.61644C17.007 6.17809 17.007 5.84931 17.007 5.63013C17.007 5.41095 17.007 5.08219 17.007 4.86301C17.007 4.53424 17.007 4.31506 17.007 4.20547C17.007 4.09588 16.8974 3.87671 16.8974 3.76712C16.7877 3.65753 16.6781 3.54794 16.5684 3.43835C16.4588 3.32876 16.2395 3.32876 16.1299 3.21917C15.5817 3.10959 14.9239 3 14.1564 3C12.4023 3 11.1962 3.10959 10.7577 3.32877C10.5384 3.43836 10.3191 3.54794 10.2095 3.76712C9.99024 3.9863 9.99023 4.09589 10.0999 4.09589C10.6481 4.20548 11.0866 4.42465 11.3059 4.75342L11.4155 4.97261C11.5252 5.0822 11.5251 5.30136 11.6348 5.63013C11.7444 5.9589 11.7444 6.28767 11.7444 6.72602C11.7444 7.38356 11.7444 8.0411 11.7444 8.47946C11.7444 9.0274 11.6348 9.35616 11.6348 9.68493C11.6348 10.0137 11.5252 10.2329 11.4155 10.3425C11.3059 10.5616 11.3059 10.6712 11.1962 10.6712C11.1962 10.6712 11.1962 10.7808 11.0866 10.7808C10.977 10.7808 10.8673 10.8904 10.6481 10.8904C10.5384 10.8904 10.3191 10.7808 10.2095 10.6712C9.99024 10.5616 9.77096 10.3425 9.66133 10.1233C9.44205 9.90411 9.22277 9.57534 9.0035 9.13698C8.78422 8.69862 8.4553 8.26027 8.23603 7.60274L8.01677 7.16439C7.90714 6.94521 7.68786 6.50685 7.46859 5.9589C7.24931 5.41096 7.03003 4.97261 6.81076 4.42466C6.70112 4.20548 6.5915 4.09588 6.48186 3.9863H6.37222C6.37222 3.9863 6.26257 3.87672 6.15293 3.87672C6.0433 3.87672 5.93367 3.76712 5.82403 3.76712H1.8771C1.43855 3.76712 1.21928 3.87671 1.10964 3.9863L1 4.09589C1 4.09589 1 4.20548 1 4.31507C1 4.42466 1.00001 4.53424 1.10964 4.75342C1.65783 6.06849 2.31565 7.38356 2.97347 8.69863C3.63129 9.90411 4.28912 11 4.72767 11.7671C5.27585 12.5343 5.71439 13.3014 6.26258 13.9589C6.81076 14.6164 7.13966 15.0548 7.2493 15.274C7.46858 15.4932 7.57821 15.6027 7.68784 15.7123L8.01677 16.0411C8.23605 16.2603 8.56495 16.589 9.0035 16.9178C9.44205 17.2466 9.99022 17.5753 10.5384 17.9041C11.0866 18.2329 11.7444 18.4521 12.4023 18.6712C13.1697 18.8904 13.8275 19 14.4853 18.8904H16.1299C16.4588 18.8904 16.6781 18.7808 16.8974 18.5617L17.007 18.4521C17.007 18.3425 17.1166 18.3425 17.1166 18.2329C17.1166 18.1233 17.1166 18.0137 17.1166 17.7945C17.1166 17.3562 17.1166 17.0274 17.2263 16.6986C17.3359 16.3699 17.3359 16.1507 17.4456 15.9315C17.5552 15.7123 17.6648 15.6027 17.7745 15.4932C17.8841 15.3836 17.9937 15.274 17.9937 15.274H18.1033C18.3226 15.1644 18.6515 15.274 18.8708 15.4932C19.1997 15.7123 19.5286 16.0411 19.7479 16.3699C19.9672 16.6986 20.2961 17.0274 20.7347 17.4658C21.1732 17.9041 21.5021 18.2329 21.7214 18.3425L22.0503 18.5617C22.2696 18.6712 22.4888 18.7808 22.8178 18.8904C23.1467 19 23.3659 19 23.5852 19L27.3129 18.8904C27.6418 18.8904 27.9707 18.7808 28.19 18.6712C28.4092 18.5617 28.5189 18.4521 28.5189 18.2329C28.5189 18.1233 28.5189 17.9041 28.5189 17.7945C28.2996 17.5754 28.2996 17.4658 28.2996 17.3562Z" fill="#23262F"/>
                         </svg>
@@ -906,17 +917,16 @@
 
             <div class="footer__bottom">
                 <div class="footer__bottom-left">
-                    <a class="footer__bottom-link" href="#">Правила обработки cookie</a>
-                    <a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__bottom-link" href="#" target="_blank">Правила обработки cookie</a>
+                    <a class="footer__bottom-link" href="#" target="_blank">Политика конфиденциальности</a>
+                    <a class="footer__bottom-icon" href="#">
+                        <img src="img/footer-icon.png" alt="skolkovo icon">
+                    </a>
                 </div>
 
-                <a class="footer__bottom-icon" href="#">
-                    <img src="img/footer-icon.svg" alt="skolkovo icon">
-                </a>
-
                 <div class="footer__bottom-right">
-                    <span class="footer__bottom-link footer-copyright">2022 © Miroco</span>
-                    <a class="footer__bottom-link footer__bottom-link--black" href="#">Разработано в <b>webScape<span>.</span></b></a>
+                    <span class="footer-copyright">2022 © Miroco</span>
+                    <a class="footer__bottom-link--black" href="#" target="_blank">Разработано в <b>webScape<span>.</span></b></a>
                 </div>
 
             </div> <!--footer bottom-->
@@ -938,7 +948,7 @@
                     </div>
 
                     <div class="modal__input-box">
-                        <input class="modal__form-input" type="tel" placeholder="Телефон">
+                        <input class="modal__form-input inputtel" data-inputmask="'mask': '+7(999)999-99-99'" type="tel" placeholder="Телефон">
                         <img class="modal__form-input-img" src="img/modal/tel.svg" alt="tel icon">
                     </div>
 

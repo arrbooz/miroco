@@ -77,6 +77,9 @@
 }
 
 @media (max-width: 960px) {
+    .questions {
+        padding: 38px 0;
+    }
     .questions__inner {
         display: flex;
     }
@@ -92,6 +95,10 @@
 }
 
 @media (max-width: 640px) {
+    
+    .questions__text {
+        margin-bottom: 22px;
+    }
     .questions__inner {
         flex-direction: column;
     }
@@ -109,6 +116,9 @@
 
 @media (max-width: 480px) {
 
+    .questions {
+        margin-bottom: 82px;
+    }
     .questions-circle-1 {
         left: -300px;
     }
@@ -116,6 +126,13 @@
         width: 281px;
         top: 93px;
         right: -105px;
+    }
+    .questions__text {
+        margin-bottom: 29px;
+    }
+    .questions__form-btn,
+    .questions__form-input {
+        padding: 14px 20px;
     }
 }
 

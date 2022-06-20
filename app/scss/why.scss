@@ -34,9 +34,12 @@
 @media (max-width: 1200px) {
     .why {
         padding-top: 28px;
+        padding-bottom: 30px;
     }
     .why__title {
         margin-bottom: 40px;
+        font-size: 28px;
+        max-width: 500px;
     }
     .why__list {
         grid-gap: 40px 60px;
@@ -48,13 +51,26 @@
 }
 
 @media (max-width: 960px) {
+    .why {
+        padding-bottom: 100px;
+    }
     .why__list {
         display: flex;
         flex-direction: column;
     }
+    .why__title {
+        font-size: 24px;
+        max-width: none;
+    }
+    .why__list {
+        grid-gap: 30px 60px;
+    }
 }
 
 @media (max-width: 640px) {
+    .why {
+        padding-bottom: 85px;
+    }
     .why__title {
         font-size: 20px;
     }
@@ -66,5 +82,8 @@
     }
     .why__item {
         margin-bottom: 0;
+    }
+    .why__list {
+        grid-gap: 18px 60px;
     }
 }

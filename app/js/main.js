@@ -73,7 +73,7 @@ let howitworksSlide = new Swiper('.how-it-works__slider', {
     320: {
       slidesPerView: 1,
       direction: 'horizontal',
-      spaceBetween: 10,
+      spaceBetween: 15,
     },
     480: {
       slidesPerView: 3,
@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
+// read more
+
 new Readmore('.reviews__text', {
   speed: 75,
   collapsedHeight: 144,
@@ -142,6 +144,7 @@ new Readmore('.reviews__text', {
 
 const burger = document.querySelector("#burger");
 const popup = document.querySelector("#popup");
+const logo = document.querySelector("#logo");
 const body = document.body;
  
 // Клонируем меню, чтобы задать свои стили для мобильной версии
@@ -157,6 +160,7 @@ function burgerHandler(e) {
   popup.classList.toggle("open");
   burger.classList.toggle("active");
   body.classList.toggle("noscroll");
+  logo.classList.toggle("close");
   renderPopup();
 }
  
@@ -178,6 +182,7 @@ function closeOnClick() {
   popup.classList.remove("open");
   burger.classList.remove("active");
   body.classList.remove("noscroll");
+  logo.classList.remove("close");
 }
 
 
@@ -204,6 +209,9 @@ $('.nav__list-link--reviews').on('click', function(e){
   e.preventDefault();
 });
 
+// inputmask
+
+Inputmask().mask(document.querySelectorAll(".inputtel"));
 
 
 

@@ -137,7 +137,7 @@
 
 @media (max-width: 960px) {
     .buy {
-        padding-top: 35px;
+        padding-top: 15px;
     }
     .buy__info {
         max-width: 340px;  
@@ -166,7 +166,7 @@
     }
     .buy-circle {
         right: -374px;
-        top: -48px;
+        top: -53px;
     } 
 }
 
@@ -182,7 +182,7 @@
     }
     .buy-circle {
         right: -390px;
-        top: -42px;
+        top: -61px;
     } 
 }
 
@@ -202,20 +202,41 @@
 }
 
 @media (max-width: 640px) {
+    .buy {
+        padding-bottom: 136px;
+    }
     .buy__info {
         max-width: 300px;
     }
     .buy-bg {
-        right: -690px;
+        right: -611px;
+        top: -34px;
     }
     .buy-circle {
         display: none;
     }
     .buy__img-1 {
-        right: -630px;
+        right: -707px;
+        top: -5px;
     }
     .buy__img-2 {
-        right: -742px;
+        right: -705px;
+        top: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buy-bg {
+        right: -630px;
+        top: -34px;
+    }
+    .buy__img-1 {
+        right: -707px;
+        top: -5px;
+    }
+    .buy__img-2 {
+        right: -720px;
+        top: 160px;
     }
 }
 
@@ -224,16 +245,17 @@
         right: -750px;
     }
     .buy__img-1 {
-        right: -670px;
+        right: -690px;
     }
     .buy__img-2 {
-        right: -770px;
+        right: -790px;
     }
 }
 
 @media (max-width: 480px) {
     .buy {
         padding-top: 0;
+        padding-bottom: 226px;
     }
     .buy__img {
         display: none;
