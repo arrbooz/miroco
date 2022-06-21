@@ -130,6 +130,7 @@
 
 .switch__btn {
     margin: auto 20px;
+    
     input[type="checkbox"] {
         position: relative;
         width: 50px;
@@ -145,6 +146,7 @@
         background: $blue;
     }
     input[type="checkbox"]::before {
+        cursor: pointer;
         content: '';
         position: absolute;
         width: 30px;

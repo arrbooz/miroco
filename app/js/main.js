@@ -150,6 +150,7 @@ new Readmore(".reviews__text", {
 const burger = document.querySelector("#burger")
 const popup = document.querySelector("#popup")
 const logo = document.querySelector("#logo")
+const navList = document.querySelector("#nav-list")
 const body = document.body
 
 // Клонируем меню, чтобы задать свои стили для мобильной версии
@@ -175,7 +176,7 @@ function renderPopup() {
 }
 
 // Код для закрытия меню при нажатии на ссылку
-const links = Array.from(navbox.children)
+const links = Array.from(navList.children)
 
 // Для каждого элемента меню при клике вызываем ф-ию
 links.forEach((link) => {
