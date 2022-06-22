@@ -58,12 +58,15 @@
     background-color: transparent;
     border: none;
     color: $white;
-    margin-right: 30px;
+    margin-right: 19px;
     cursor: pointer;
     transition: all ease-in-out .3;
     &:hover {
       opacity: .7;
     }
+  }
+  .reg__btn {
+    padding: 16px 33px;
   }
 }
 
@@ -87,7 +90,7 @@
     align-items: center;
   }
   .burger__field {
-    padding: 15px;
+    padding: 17px 4px 15px 15px;
     cursor: pointer;
     position: relative;
     z-index: 5;
@@ -197,5 +200,12 @@
   }
   body.noscroll {
     overflow: hidden;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .header {
+    padding: 20px 0;
   }
 }

@@ -1,9 +1,9 @@
 .rates {
-    padding-top: 90px;
+    padding-top: 99px;
     padding-bottom: 75px;
 
     &__title {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     &__slider {
         overflow: hidden;
@@ -16,10 +16,9 @@
 .rates__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 38px 46px;
+    padding: 31px 46px;
     border: 1px solid rgba(224, 224, 224, 1);
     border-radius: 8px;
 
@@ -28,7 +27,7 @@
         font-weight: 700;
         line-height: 32px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 27px;
     }
     &-points {
         font-size: 16px;
@@ -64,12 +63,13 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 23px;
         text-align: center;  
     }
     &-btn {
         max-width: 296px;
         width: 100%;
+        margin-top: auto;
         border: 1px solid #4B5DFF;
         background-color: transparent;
         line-height: 100%;
@@ -172,7 +172,7 @@
 
 @media (max-width: 1200px) {
     .rates {
-        padding-top: 35px;
+        padding-top: 43px;
         padding-bottom: 65px;
     }
     .switch__wrapper {
@@ -188,7 +188,7 @@
 
 @media (max-width: 960px) {
     .rates {
-        padding-bottom: 28px;
+        padding-bottom: 36px;
     }    
     .rates__title {
         margin-bottom: 15px;
@@ -226,12 +226,13 @@
         font-size: 14px;
         margin-bottom: 0;
     }
-    .rates-point--withoutcheck {
+    .rates__item--active .rates__item-point--withoutcheck {
         text-align: left;
     }
     .rates__item-btn {
         align-self: flex-end;
         max-width: 260px;
+        margin-top: -10px;
     }
 }
 
@@ -242,6 +243,8 @@
     .rates__item {
         max-height: none;
         margin-bottom: 50px;
+        padding: 18px;
+        padding-top: 75px;
     }
     .rates__navigation {
         display: flex;
@@ -280,11 +283,17 @@
         width: 100%;
         max-width: none;
     }
+    .rates__item-point {
+        margin-bottom: 5px;
+    }
     .rates__item-points {
         margin-bottom: 40px;
     }
     .rates__item-price {
         right: 18px;
+    }
+    .rates__item-title {
+        left: 20px;
     }
 }
 

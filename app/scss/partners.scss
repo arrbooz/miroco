@@ -1,5 +1,5 @@
 .partners {
-    padding-top: 170px;
+    padding-top: 183px;
     padding-bottom: 75px;
 }
 
@@ -8,7 +8,7 @@
 .partners-slider {
     position: relative;
     overflow: hidden;
-    padding: 0 70px;
+    padding: 0 80px;
 }
 
 .swiper-slide__img {
@@ -23,7 +23,7 @@
 }
 
 .partners .swiper-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 // navigation
@@ -70,10 +70,10 @@
 
 @media (max-width: 1200px) {
     .partners {
-        padding-top: 120px;
+        padding-top: 121px;
     }
     .partners-slider {
-        padding: 0 55px;
+        padding: 0 90px;
     }
     .partners .swiper-slide__img img {
         margin: 0 auto;
@@ -84,10 +84,13 @@
 @media (max-width: 960px) {
     .partners {
         padding-top: 100px;
-        padding-bottom: 55px;
+        padding-bottom: 45px;
     }
     .partners__title {
         margin-bottom: 14px;
+    }
+    .partners-slider {
+        padding: 0 75px;
     }
     .partners .swiper-pagination-bullet {
         width: 12px;
@@ -96,14 +99,15 @@
     .partners .swiper-wrapper {
         margin-bottom: 0;
     }
-
 }
-
 
 @media (max-width: 640px) {
     .partners {
-        padding-top: 95px;
+        padding-top: 90px;
         padding-bottom: 49px;
+    }
+    .partners__title {
+        margin-bottom: 8px;
     }
     .partners-next,
     .partners-prev {

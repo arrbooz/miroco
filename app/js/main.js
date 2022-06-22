@@ -54,7 +54,7 @@ let reviewsSlide = new Swiper(".reviews__slider", {
   },
   breakpoints: {
     960: {
-      spaceBetween: 60,
+      spaceBetween: 40,
       slidesPerView: 2,
     },
     320: {
@@ -117,7 +117,7 @@ let ratesSlide = new Swiper(".rates__slider", {
     640: {
       slidesPerView: 3,
       direction: "vertical",
-      spaceBetween: 20,
+      spaceBetween: 12,
     },
     960: {
       slidesPerView: 3,

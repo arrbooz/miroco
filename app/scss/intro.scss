@@ -2,7 +2,6 @@
   padding-top: 128px;
   padding-bottom: 90px;
   position: relative;
-
   background-image: url(../img/intro-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,31 +16,34 @@
     text-transform: uppercase;
     color: $white;
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
   }
   &__title {
     font-size: 50px;
     font-weight: 700;
     line-height: 120%;
     color: $white;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
   &__descr {
     max-width: 460px;
     line-height: 150%;
     color: $white;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    padding: 13px 33px;
   }
 }
 
 // slider
 
 .main-slider {
-  //   overflow: hidden;
   padding-top: 70px;
 
   .swiper-slide {
-    padding-bottom: 130px;
-    // overflow: hidden;
+    padding-bottom: 131px;
     display: flex;
   }
   .swiper-slide__box {
@@ -80,16 +82,17 @@
 }
 .intro__img {
   position: absolute;
-  top: 0;
-  right: -450px;
+  top: -60px;
+  right: -439px;
   width: 959px;
   height: 585px;
   box-shadow: 0px 20px 50px -10px rgba(3, 9, 62, 0.15);
-  border-radius: 8px 8px 0px 8px;
+  border-radius: 8px;
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
   }
 }
 
@@ -110,9 +113,10 @@
 @media (max-width: 1200px) {
   .intro {
     padding-top: 78px;
+    background-position: 90% 0;
   }
   .intro .swiper-slide {
-    padding-bottom: 83px;
+    padding-bottom: 86px;
   }
   .intro__subtitle {
     font-size: 16px;
@@ -129,6 +133,8 @@
   .intro__img {
     width: 711px;
     height: 434px;
+    top: -17px;
+    right: -299px;
   }
   .intro-circle-1 {
     left: -297px;
@@ -142,8 +148,15 @@
   .intro {
     padding-top: 40px;
   }
-  .intro .swiper-slide {
-    padding-bottom: 40px;
+  .intro__inner {
+    padding-bottom: 21px;
+  }
+  .main-slider {
+    padding-top: 93px;
+  }
+  .main-slider .swiper-slide__box {
+    max-width: 381px;
+    margin-bottom: -19px;
   }
   .intro__subtitle {
     font-size: 14px;
@@ -160,25 +173,44 @@
   .intro__img {
     width: 711px;
     height: 434px;
+    top: -30px;
+    right: -493px;
   }
   .intro .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
   }
   .intro-circle-3 {
-    right: -11px;
+    right: -96px;
   }
   .intro-circle-2 {
-    right: 50px;
+    right: 0;
     top: 213px;
     width: 500px;
+  }
+  .intro-circle-1 {
+    left: -412px;
+    width: 90%;
+  }
+  .intro__btn {
+    padding: 13px 65px;
   }
 }
 
 @media (max-width: 640px) {
-  .intro__img {
-    display: none;
+  .intro {
+    padding-bottom: 85px;
   }
+  .intro__img {
+    top: -21px;
+    right: -574px;
+  }
+  .intro__inner {
+    padding-bottom: 44px;
+}
+  .main-slider {
+    padding-top: 64px;
+}
   .intro__title {
     font-size: 28px;
   }
@@ -196,7 +228,11 @@
   }
   .intro-circle-1 {
     transform: rotate(21deg);
-    top: -138px;
+    top: -85px;
+    left: -272px;
+  }
+  .intro__btn {
+    padding: 13px 85px;
   }
 }
 

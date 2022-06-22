@@ -115,6 +115,12 @@ input:focus {
 	.section-title {
 		font-size: 36px;
 		margin-bottom: 60px;
+		&--line {
+			padding-left: 19px;
+			&::before {
+				height: 45px;
+			}
+		}
 	}
 }
 
@@ -148,8 +154,12 @@ input:focus {
 		&--line {
 			&::before {
 				height: 34px;
+				width: 3px;
 			}
 		}
+	}
+	.btn {
+		font-size: 16px;
 	}
 }
 

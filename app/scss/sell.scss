@@ -1,5 +1,5 @@
 .sell {
-    padding-top: 330px;
+    padding-top: 347px;
     padding-bottom: 435px;
     position: relative;
 
@@ -12,11 +12,14 @@
         max-width: 460px;  
     }
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     &__text {
         line-height: 150%;
-        margin-bottom: 30px;
+        margin-bottom: 27px;
+    }
+    & .btn {
+        padding: 13px 32px;
     }
 }
 
@@ -25,8 +28,8 @@
 .sell-bg,
 .sell-circle {
 	position: absolute;
-	top: 40px;
-	left: 0;
+	top: 51px;
+    left: -16px;
 }
 
 .sell__img {
@@ -40,15 +43,15 @@
 }
  
 .sell__img-1 {
-    top: 268px;
+    top: 289px;
     left: 360px;
     z-index: 6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sell__img-2 {
-    top: 229px;
-    left: 580px;
+    top: 250px;
+    left: 590px;
     z-index: 5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -102,7 +105,7 @@
 
 @media (max-width: 1200px) {
     .sell {
-        padding-top: 292px;
+        padding-top: 290px;
     }
     .sell__info {
         max-width: 440px;  
@@ -115,8 +118,8 @@
         margin-bottom: 20px;
     }
     .sell-bg {
-        top: 0px;
-        left: -364px;
+        top: 4px;
+        left: -362px;
     }
     .sell-circle {
         left: -280px;
@@ -125,14 +128,14 @@
     .sell__img-1 {
         width: 269px;
         height: 376px;
-        left: 67px;
+        left: 75px;
         top: 250px;
     }
     .sell__img-2 {
         width: 269px;
         height: 446px;
-        left: 281px;
-        top: 215px;
+        left: 279px;
+        top: 212px;
     }
 }
 
@@ -159,6 +162,9 @@
         br {
             display: none;
         }
+        b {
+            font-weight: 400;
+        }
     }
     .sell__title {
         margin-bottom: 15px;
@@ -171,7 +177,7 @@
         width: 100%;
     }
     .sell-bg {
-        top: 61px;
+        top: 73px;
         left: -440px;
         height: 100%;
     }
@@ -183,13 +189,13 @@
         width: 199px;
         height: 280px;   
         left: 74px;
-        top: 371px;
+        top: 379px;
     }
     .sell__img-2 {
         width: 199px;
         height: 334px;
         left: 168px;
-        top: 248px;
+        top: 256px;
     }
 }
 
@@ -234,7 +240,8 @@
 
 @media (max-width: 640px) {
     .sell {
-        padding-bottom: 152px;
+        padding-bottom: 148px;
+        padding-top: 287px;
     }
     .sell__info {
         max-width: 300px;
@@ -243,8 +250,9 @@
         padding-right: 0;
     }
     .sell-bg {
-        left: -593px;
-        top: 99px;
+        left: -621px;
+        top: 74px;
+        height: 110%;
     }
     .sell-circle {
         display: none;
@@ -254,7 +262,10 @@
     }
     .sell__img-1 {
         left: -87px;
-        top: 366px;
+        top: 374px;
+    }
+    .sell__img-2 {
+        top: 251px;
     }
 }
 

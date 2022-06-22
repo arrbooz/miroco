@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 60px;
+    padding-top: 64px;
     padding-bottom: 20px;
     background-color: $white;
     position: relative;
@@ -7,11 +7,11 @@
     &__top {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
     &__nav-list {
         display: flex; 
+        margin-right: 56px;
     }
     &__nav-item:not(:last-child) {
         margin-right: 30px;
@@ -36,7 +36,7 @@
         } 
     }
     &__social-item:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 17px;
     }
     &__bottom {
         display: flex;
@@ -59,7 +59,7 @@
     }
     
     &__bottom-link--black {
-        font-size: 14px;
+        font-size: 15px;
         color: $grey;
         b {
             color: #000000;
@@ -107,6 +107,9 @@
     .footer__bottom {
         position: relative;
         padding-bottom: 35px;
+    }
+    .footer__top {
+        margin-bottom: 34px;
     }
 }
 

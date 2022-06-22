@@ -45,7 +45,7 @@
 
 @media (max-width: 1200px) {
     .advantages {
-        padding-top: 57px;
+        padding-top: 46px;
     }
     .advantages__item {
         max-width: 31%;
@@ -92,6 +92,12 @@
 @media (max-width: 640px) {
     .advantages {
         padding-bottom: 15px;
+    }
+    .advantages__title {
+        margin-bottom: 42px;
+    }
+    .advantages__item:not(:last-child) {
+        margin-bottom: 21px;
     }
 }
 

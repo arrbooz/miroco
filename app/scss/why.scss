@@ -1,9 +1,9 @@
 .why {
-    padding-top: 10px;
-    padding-bottom: 77px;
+    padding-top: 12px;
+    padding-bottom: 112px;
     
     &__title {
-        margin-bottom: 60px;
+        margin-bottom: 56px;
         max-width: 559px;
         font-size: 32px;
     }
@@ -11,7 +11,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 60px 80px;
+        grid-gap: 51px 80px;
     }
     &__item:last-child {
         grid-column: span 2;
@@ -33,16 +33,16 @@
 
 @media (max-width: 1200px) {
     .why {
-        padding-top: 28px;
-        padding-bottom: 30px;
+        padding-top: 35px;
+        padding-bottom: 43px;
     }
     .why__title {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
         font-size: 28px;
         max-width: 500px;
     }
     .why__list {
-        grid-gap: 40px 60px;
+        grid-gap: 27px 60px;
     }
     .why__subtitle {
         font-size: 18px;
@@ -53,6 +53,7 @@
 @media (max-width: 960px) {
     .why {
         padding-bottom: 100px;
+        padding-top: 25px;
     }
     .why__list {
         display: flex;
@@ -73,6 +74,7 @@
     }
     .why__title {
         font-size: 20px;
+        margin-bottom: 41px;
     }
 }
 
