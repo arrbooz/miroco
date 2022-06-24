@@ -11,9 +11,9 @@ body {
 	line-height: 150%;
 	font-weight: 400;
 	color: $black;
-	overflow-x: hidden;
 	min-width: 320px;
 	background-color: $background;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -25,6 +25,7 @@ body {
 
 .main {
 	flex: 1 0 auto;
+	overflow-x: hidden;
 }
 .footer {
 	flex: 0 0 auto;
@@ -169,5 +170,16 @@ input:focus {
 	}
 	.container {
 		max-width: 330px;
+	}
+	.section-title {
+		&--line {
+			&::before {
+				height: 40px;
+				width: 4px;
+			}
+		}
+	}
+	.btn {
+		font-size: 18px;
 	}
 }

@@ -259,7 +259,7 @@
 
 @media (max-width: 480px) {
     .about {
-        padding-bottom: 75px;
+        padding-bottom: 84px;
     }
     .about__data {
         grid-template-columns: repeat(2, 140px);
@@ -268,11 +268,11 @@
     .about__img-2 {
         width: 431px;
         height: 255px;
-        top: 948px;
+        top: 887px;
     }
     .about__img-1 {
-        right: 344px;
-        top: 873px;
+        right: 337px;
+        top: 819px;
     }
     .about__text {
         margin-bottom: 42px;
@@ -296,6 +296,6 @@
     .about__img-1 {
         width: 90px;
         height: fit-content;
-        top: 883px;
+        top: 822px;
     }
 }

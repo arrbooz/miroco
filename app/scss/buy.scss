@@ -269,7 +269,10 @@
 @media (max-width: 480px) {
     .buy {
         padding-top: 0;
-        padding-bottom: 226px;
+        padding-bottom: 235px;
+    }
+    .buy__title {
+        margin-bottom: 21px;
     }
     .buy__img {
         display: none;

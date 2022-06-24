@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 480px) {
+    .why {
+        padding-bottom: 81px;
+    }
     .why__title {
         margin-bottom: 30px;
     }
@@ -86,6 +89,6 @@
         margin-bottom: 0;
     }
     .why__list {
-        grid-gap: 18px 60px;
+        grid-gap: 20px 60px;
     }
 }

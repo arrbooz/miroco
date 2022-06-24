@@ -192,22 +192,32 @@
 @media (max-width: 480px) {
     .reviews {
         padding-bottom: 76px;
+        padding-top: 41px;
+    }
+    .reviews__item {
+        padding: 36px 20px;
+        padding-bottom: 65px;
     }
     .reviews__date {
         position: absolute;
-        bottom: 5px;
-        right: 10px;
+        bottom: 28px;
+        right: 18px;
+    }
+    .reviews__avatar {
+        width: 60px;
+        height: 60px;
     }
     .reviews__client-name {
         margin-bottom: 2px;
+        font-size: 16px;
     }
     .reviews__client-info {
         align-self: flex-start;
     }
     .reviews__stars {
         position: absolute;
-        top: 98px;
-        left: 117px;
+        top: 92px;
+        left: 96px;
     }
     .reviews .reviews__navigation {
         width: 100%;
@@ -215,6 +225,15 @@
     }
     .reviews__pagination {
         margin: auto;
+    }
+    .reviews__text {
+        max-height: 336px;
+    }
+    .reviews__content-title {
+        font-size: 16px;
+    }
+    .reviews__header {
+        margin-bottom: 29px;
     }
 
 

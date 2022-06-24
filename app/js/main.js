@@ -65,25 +65,27 @@ let reviewsSlide = new Swiper(".reviews__slider", {
 })
 
 let howitworksSlide = new Swiper(".how-it-works__slider", {
-  loop: false,
+  
   pagination: {
     el: ".how-it-works__pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".how-it-works-next",
-    prevEl: ".how-it-works-prev",
+    nextEl: ".how-it-works__next",
+    prevEl: ".how-it-works__prev",
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
       direction: "horizontal",
       spaceBetween: 15,
+      loop: true,
     },
     480: {
       slidesPerView: 3,
       spaceBetween: 20,
       direction: "vertical",
+      loop: false,
     },
     960: {
       direction: "horizontal",
@@ -99,25 +101,27 @@ let howitworksSlide = new Swiper(".how-it-works__slider", {
 })
 
 let ratesSlide = new Swiper(".rates__slider", {
-  loop: false,
+  
   pagination: {
     el: ".rates__pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".rates-next",
-    prevEl: ".rates-prev",
+    nextEl: ".rates__next",
+    prevEl: ".rates__prev",
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
       direction: "horizontal",
       spaceBetween: 20,
+      loop: true,
     },
     640: {
       slidesPerView: 3,
       direction: "vertical",
       spaceBetween: 12,
+      loop: false,
     },
     960: {
       slidesPerView: 3,

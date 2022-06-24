@@ -102,6 +102,9 @@
 }
 
 @media (max-width: 480px) {
+    .advantages {
+        padding-bottom: 19px;
+    }
     .advantages .section-title--line {
         &::before {
             height: 68px;
@@ -112,6 +115,12 @@
     }
     .advantages__item {
         max-width: none;
+    }
+    .advantages__item:not(:last-child) {
+        margin-bottom: 26px;
+    }
+    .advantages__text {
+        max-width: 297px;
     }
     .advantages__subtitle {
         font-weight: 700;
