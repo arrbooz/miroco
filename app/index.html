@@ -16,13 +16,16 @@
 	</head>
 	<body>
 		<div class="wrapper">
+            
 			<div class="header">
 				<div class="container">
 					<div class="header__inner">
-						<picture id="logo">
+						<a href="#" id="logo"> 
+                            <picture>
 							<source srcset="img/logo.png 1x, img/logo@2x.png 2x" />
 							<img src="img/logo.png" alt="logo" />
-						</picture>
+						    </picture>
+                        </a>
 
 						<div class="navbox">
 							<nav class="nav">
@@ -59,7 +62,6 @@
 					<!--header inner-->
 				</div>
 				<!--container-->
-				<div class="popup" id="popup"></div>
 			</div>
 			<!--header-->
 
@@ -181,7 +183,7 @@
 									<p class="about__text">
 										Платформа “МИРОко” - это современный сервис для автоматизации и эффективной работы с поставщиками по всей территории Российской
 										Федерации. Наш сервис помогает оперативно распределять заявки между своими доверенными поставщиками через запрос предложений или в
-										режиме аукционов. Используя “МИРОко” вы получаете ряд преимуществ, увеличивающий скорость вашей работы. Зарегестрируйтесь на нашей
+										режиме аукционов. Используя “МИРОко” вы получаете ряд преимуществ, увеличивающий скорость вашей работы. Зарегистрируйтесь на нашей
 										платформе как покупатель или как поставщик и проводите торги в любое время и в любом месте, благодаря адаптивному под любые
 										устройства интерфейсу.
 									</p>
@@ -232,7 +234,7 @@
 							<div class="sell__info">
 								<h2 class="section-title sell__title">Продавайте</h2>
 								<p class="sell__text">
-									Зарегестрируйтесь на платформе “МИРОко” и<br />станьте продавцом всего за несколько минут! Ежедневно на нашей платформе происходит
+									Зарегистрируйтесь на платформе “МИРОко” и<br />станьте продавцом всего за несколько минут! Ежедневно на нашей платформе происходит
 									более <br /><b>1 000</b> торгов. Получайте автоматические уведомления о запросе на продаваемый вами товар и оформляйте сделки в
 									несколько кликов.
 								</p>
@@ -377,7 +379,7 @@
 									Продавайте или покупайте матриалы на выгодных для вас условиях. Благодаря удобному интерфейсу, в котором указана не только
 									стоимость, но и сроки поставки товара, вы с легкостью сможете найти подходящий для вас вариант и запросить счет за считанные минуты!
 								</p>
-								<button class="btn" data-micromodal-trigger="modal-1">Зарегестрироваться</button>
+								<button class="btn" data-micromodal-trigger="modal-1">Зарегистрироваться</button>
 							</div>
 						</div>
 						<!--choose inner-->
@@ -622,7 +624,7 @@
 						<div class="connect__inner">
 							<h2 class="connect__title section-title">Подключитесь к нам уже сегодня!</h2>
 							<div class="connect__text">
-								Зарегестрируйтесь на платформе прямо сейчас и получите бесплатный доступ к тарифу “Стандарт” на 14 дней.
+								Зарегистрируйтесь на платформе прямо сейчас и получите бесплатный доступ к тарифу “Стандарт” на 14 дней.
 							</div>
 							<button class="btn btn--white">Подключиться к платформе</button>
 						</div>
@@ -730,12 +732,8 @@
 							<div class="switch__wrapper">
 								<span class="switch__text">Для покупателя</span>
 
-								<!-- <div class="switch__btn">
-                  <input class="rates__checkbox" type="checkbox" />
-                </div> -->
-
-								<label class="switch__btn">
-									<input class="switch__input" type="checkbox" />
+								<label class="switch__btn" id="switcher">
+									<input class="switch__input" type="checkbox"  />
 									<i class="switch__icon"></i>
 								</label>
 
@@ -743,10 +741,10 @@
 							</div>
 							<!--switch wrapper-->
 
-							<div class="rates__slider rates__slider-1" id="rates__slider-1">
+							<div class="rates__slider rates__slider-1 show" id="forbuyer">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide rates__item">
-										<h3 class="rates__item-title">Бесплатный</h3>
+										<h3 class="rates__item-title">Платный</h3>
 										<ul class="rates__item-points">
 											<li class="rates__item-point">Безусловно, укрепление и развитие внутренней</li>
 											<li class="rates__item-point">Какое-то Преимущество номер 2</li>
@@ -799,7 +797,7 @@
 							</div>
 							<!--rates slider-->
 
-							<div class="rates__slider rates__slider-2" id="rates__slider-2">
+							<div class="rates__slider rates__slider-2" id="forseller">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide rates__item">
 										<h3 class="rates__item-title">Бесплатный</h3>
@@ -1173,11 +1171,7 @@
 						<div class="footer__bottom-right">
 							<span class="footer-copyright">2022 © Miroco</span>
 							<a class="footer__bottom-link--black" href="#" target="_blank">
-								Разработано в
-								<b>
-									webScape
-									<span>.</span>
-								</b>
+								Разработано в <b>webScape<span>.</span></b>
 							</a>
 						</div>
 					</div>
@@ -1226,12 +1220,12 @@
 						<footer class="modal__footer">
 							<p class="modal__policy">
 								Нажимая на кнопку “Зарегестрироваться” , вы соглашаетесь с нашей
-								<a href="#" class="modal-link">политикой конфиденциальности</a>
+								<a href="#" class="modal-link" target="_blank">политикой конфиденциальности</a>
 							</p>
-							<a class="modal__import modal-link" href="#"> Импортировать данные с worksbook </a>
+							<a class="modal__import modal-link" href="#" target="_blank"> Импортировать данные с worksbook </a>
 							<div class="modal__already-reg modal-link">
-								<span>Уже зарегестрированы?</span>
-								<a href="#">Войти</a>
+								<span>Уже зарегистрированы?</span>
+								<button href="#" data-micromodal-trigger="modal-2">Войти</button>
 							</div>
 						</footer>
 					</div>
@@ -1268,6 +1262,7 @@
 				</div>
 			</div>
 			<!--modal 2-->
+
 		</div>
 		<!--wrapper-->
 

@@ -64,12 +64,12 @@
         font-weight: 700;
         line-height: 100%;
         margin-bottom: 23px;
+        margin-top: auto;
         text-align: center;  
     }
     &-btn {
         max-width: 296px;
         width: 100%;
-        margin-top: auto;
         border: 1px solid #4B5DFF;
         background-color: transparent;
         line-height: 100%;
@@ -112,8 +112,12 @@
     }
 }
 
-.rates__slider-2 {
+.rates__slider {
     display: none;
+}
+
+.rates__slider.show {
+    display: block;
 }
 
 .rates .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -300,12 +304,16 @@
         width: 100%;
         max-width: none;
         margin-top: auto;
+        margin-bottom: 12px;
     }
     .rates__item-point {
         margin-bottom: 5px;
+        width: 100%;
     }
     .rates__item-points {
         margin-bottom: 40px;
+        flex-direction: column;
+        margin-right: auto;
     }
     .rates__item-price {
         right: 18px;
@@ -359,6 +367,6 @@
         margin: auto 18px;
     }
     .rates__item-btn {
-        margin-top: auto;
+        margin-bottom: 0;
     }
 }

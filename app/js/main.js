@@ -14,6 +14,9 @@ let mainSLider = new Swiper(".main-slider", {
 
 let partnersSlider = new Swiper(".partners-slider", {
 	loop: true,
+	mousewheel: {
+		invert: true,
+	  },
 	pagination: {
 		el: ".partners__pagination",
 		clickable: true,
@@ -206,3 +209,21 @@ burger.addEventListener("click", () => {
 		document.body.style.overflow = "hidden";
 	}
 });
+
+
+// rates switcher
+
+const switcher = document.querySelector("#switcher");
+const forbuyer = document.querySelector("#forbuyer");
+const forseller = document.querySelector("#forseller");
+
+switcher.addEventListener("click", () => {
+	if (switcher.is(":checked")) {
+		forseller.addClass("show");
+		forbuyer.removeClass("show");
+	} else if (switcher.is(":not(:checked)")) {
+		forbuyer.addClass("show");
+		forseller.removeClass("show");
+	}
+})
+

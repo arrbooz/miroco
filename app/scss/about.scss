@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    padding-top: 144px;
+    padding-top: 53px;
     padding-bottom: 40px;
 
     &__title {
@@ -40,7 +40,7 @@
     height: fit-content;
     position: absolute;
     bottom: 35px;
-    top: 414px;
+    top: 323px;
     right: 679px;
     z-index: 5;
     filter: drop-shadow(3.79374px 3.79374px 12.14px rgba(0, 0, 0, 0.2));
@@ -52,7 +52,7 @@
     position: absolute;
     bottom: 31px;
     right: -44px;
-    top: 270px;
+    top: 178px;
     filter: drop-shadow(3.79374px 3.79374px 12.14px rgba(0, 0, 0, 0.2));
 }
 
@@ -92,7 +92,7 @@
 
 @media (max-width: 1200px) {
     .about {
-        padding-top: 73px;
+        padding-top: 0;
     }
     .about__text {
         margin-bottom: 42px;
@@ -102,11 +102,11 @@
     }
     .about__img-1 {
         right: 224px;
-        top: 302px;
+        top: 228px;
     }
     .about__img-2 {
         right: -501px;
-        top: 156px;
+        top: 82px;
     }
 }
 
@@ -121,7 +121,6 @@
 
 @media (max-width: 960px) {
     .about {
-        padding-top: 33px;
         padding-bottom: 250px;
     }
     .about__title {
@@ -170,12 +169,12 @@
         width: 137px;
         height: 276px;
         right: 626px;
-        top: 600px;
+        top: 568px;
     }
     .about__img-2 {
         width: 620px;
         height: 356px;
-        top: 692px;
+        top: 659px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
