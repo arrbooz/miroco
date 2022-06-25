@@ -210,20 +210,13 @@ burger.addEventListener("click", () => {
 	}
 });
 
-
 // rates switcher
 
 const switcher = document.querySelector("#switcher");
 const forbuyer = document.querySelector("#forbuyer");
 const forseller = document.querySelector("#forseller");
 
-switcher.addEventListener("click", () => {
-	if (switcher.is(":checked")) {
-		forseller.addClass("show");
-		forbuyer.removeClass("show");
-	} else if (switcher.is(":not(:checked)")) {
-		forbuyer.addClass("show");
-		forseller.removeClass("show");
-	}
+switcher.addEventListener("click", function(){
+	forbuyer.classList.toggle("show");
+	forseller.classList.toggle("show");
 })
-

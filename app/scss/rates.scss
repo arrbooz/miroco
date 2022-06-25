@@ -132,61 +132,48 @@
     margin-bottom: 102px;
 }
 
-.switch__btn {
-    margin: auto 20px;
-}    
-    
 .switch {
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 31px;
+    margin: 0 20px;
+}
+
+.slider {
+    position: absolute;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    &__input {
-      display: none;
-      &:checked + .switch__icon {
-        background-color: #4B5DFF;
-        &:before {
-          transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
-        }
-        &:after {
-          transform: translate3d(20px, 2px, 0);
-        }
-      }
-    }
-    &__icon {
-      position: relative;
-      display: inline-block;
-      max-width: 51px;
-      min-width: 51px;
-      min-height: 31px;
-      max-height: 31px;
-      background-color: #bebebe;
-      border-radius: 16px;
-      vertical-align: text-bottom;
-      transition: all 0.3s linear;
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 49px;
-        height: 29px;
-        background-color: #bebebe;
-        border-radius: 100%;
-        transform: translate3d(2px, 2px, 0) scaleX(1);
-        transition: all 0.25s linear;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        left: 1px;
-        width: 27px;
-        height: 27px;
-        background-color: #fff;
-        border-radius: 27px;
-        transform: translate3d(2px, 2px, 0);
-        transition: all 0.2s ease-in-out;
-      }
-    }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $blue;
+    transition: all .4s ease;
+    border-radius: 16px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 27px;
+    width: 27px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: all .4s ease;
+    border-radius: 50px;
+}
+
+input:checked + .slider {
+    background-color: $blue;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
 }
 
 // media
@@ -219,7 +206,7 @@
     }
     .rates__item {
         padding-top: 75px;
-        // нужно исправить 
+        // нужно исправить !!!
         max-height: 245px; 
         justify-content: flex-start;
     }
