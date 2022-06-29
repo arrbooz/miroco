@@ -132,15 +132,6 @@ let ratesSlide = new Swiper(".rates__slider", {
 	},
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	MicroModal.init({
-		disableScroll: true,
-		disableFocus: true,
-		awaitOpenAnimation: true,
-		awaitCloseAnimation: true,
-	});
-});
-
 // read more
 
 new Readmore(".reviews__text", {
