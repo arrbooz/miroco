@@ -87,23 +87,23 @@
 	}
 
 	.nav__list-item {
-			font-size: 16px;
-			margin: 0;
-			padding-bottom: 20px;
-			padding-top: 20px;
-			position: relative;
-			&::after {
-				content: "";
-				position: absolute;
-				background-color: rgba(#f7fafc, 0.2);
-				height: 1px;
-				width: 620px;
-				bottom: 0;
-				left: 50%;
-				margin-right: -50%;
-				transform: translate(-50%, -50%);
-			}
-	}		
+		font-size: 16px;
+		margin: 0;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: rgba(#f7fafc, 0.2);
+			height: 1px;
+			width: 100%;
+			bottom: 0;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 
 	.auth {
 		display: flex;
