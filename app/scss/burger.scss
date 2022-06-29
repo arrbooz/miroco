@@ -91,6 +91,8 @@
 		margin: 0;
 		padding-bottom: 20px;
 		padding-top: 20px;
+		width: 100%;
+		text-align: center;
 		position: relative;
 		&::after {
 			content: "";
@@ -103,6 +105,11 @@
 			margin-right: -50%;
 			transform: translate(-50%, -50%);
 		}
+	}
+
+	.nav {
+		width: 100%;
+		padding: 0 15px;
 	}
 
 	.auth {
