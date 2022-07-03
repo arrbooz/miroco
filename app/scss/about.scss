@@ -36,8 +36,8 @@
 // images
 
 .about__img-1 {
-    width: 237px;
-    height: fit-content;
+    width: 221px;
+    height: 450px;
     position: absolute;
     bottom: 35px;
     top: 323px;
@@ -290,11 +290,11 @@
 @media (max-width: 370px) {
     .about__img-2 {
         width: 370px;
-        height: fit-content;
+        height: 215px;
     }
     .about__img-1 {
         width: 90px;
-        height: fit-content;
+        height: 177px;
         top: 822px;
     }
 }
